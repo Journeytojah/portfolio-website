@@ -23,7 +23,7 @@
 			autoAlpha: 1,
 			duration: 3,
 			ease: 'expo.inOut',
-			x: '100vw'
+			x: '98vw'
 		});
 		intro.to('.test', {
 			autoAlpha: 0,
@@ -85,6 +85,10 @@
 		height: 90px;
 		background-color: #020405;
         border-bottom: 1px solid #333;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 9999;
 	}
 	ul {
 		list-style: none;
