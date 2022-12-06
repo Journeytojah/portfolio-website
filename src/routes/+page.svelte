@@ -47,8 +47,8 @@
 		var tl = gsap.timeline({
             paused: true
         });
-		tl.from('.text-anim', {
-			y: '250',
+		tl.to('.text-anim', {
+			y: '0',
 			duration: 1,
 			delay: 1.5,
 			ease: 'expo.out(1.5)',
@@ -60,7 +60,7 @@
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
         textAnim();
-		scroll();
+		// scroll();
 	});
 
 	// onDestroy -----------------------------------------------------
@@ -152,6 +152,11 @@
 	.textWrapper > #first {
 		position: relative;
 	}
+
+    #first,
+    #second {
+        transform: translate(0, 250px);
+    }
 
 	h1 {
 		font-family: 'Philosopher', sans-serif;
