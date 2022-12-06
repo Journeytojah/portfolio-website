@@ -60,7 +60,7 @@
 	onMount(() => {
 		gsap.registerPlugin(ScrollTrigger);
         textAnim();
-		// scroll();
+		scroll();
 	});
 
 	// onDestroy -----------------------------------------------------
